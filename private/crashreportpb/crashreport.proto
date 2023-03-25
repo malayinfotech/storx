@@ -1,0 +1,17 @@
+// Copyright (C) 2021 Storx Labs, Inc.
+// See LICENSE for copying information.
+
+syntax = "proto3";
+option go_package = "storx/private/crashreportpb";
+
+package crash;
+
+service CrashReport {
+    rpc Report(ReportRequest) returns(ReportResponse) {}
+}
+
+message ReportRequest {
+    bytes gzipped_panic = 1;
+}
+
+message ReportResponse {}

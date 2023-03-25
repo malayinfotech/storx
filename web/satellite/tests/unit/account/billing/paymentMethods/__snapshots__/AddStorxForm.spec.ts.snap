@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddStorxForm renders correctly 1`] = `
+<div class="add-storx-area">
+  <p class="add-storx-area__support-info">To deposit STORX token and request higher limits, please contact <a target="_blank" rel="noopener noreferrer" href="https://supportdcs.storx/hc/en-us/requests/new?ticket_form_id=360000683212">Support</a></p>
+</div>
+`;

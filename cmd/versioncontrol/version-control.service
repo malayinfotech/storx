@@ -1,0 +1,14 @@
+[Unit]
+Description  = Version Control service
+After        = syslog.target
+
+[Service]
+User         = storx
+Group        = storx
+ExecStart    = /usr/local/bin/versioncontrol run -config-dir /etc/storx/versioncontrol/
+Restart      = always
+Type         = simple
+NotifyAccess = main
+
+[Install]
+WantedBy     = multi-user.target
